@@ -2,7 +2,6 @@
 #define PARSETESTV2_HPP
 
 #include "factory.hpp"
-#include "factory.cpp"
 #include "gtest/gtest.h"
 #include <string>
 #include "base.hpp"
