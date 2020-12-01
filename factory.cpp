@@ -52,6 +52,10 @@ public:
                 {
                     positions.push_back(i);
                 }
+		else
+		{
+			return NULL;
+		}
                 temp = "";
             }
             j = 0;

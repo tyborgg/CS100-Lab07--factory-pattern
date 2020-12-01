@@ -18,8 +18,15 @@ int main()
 	};
 
 	Base* tree = fac1.parse(args,test.length());
-	cout << tree->stringify() << endl;
-	cout << tree->evaluate() << endl;
+	if(tree != NULL)
+	{
+		cout << tree->stringify() << endl;
+		cout << tree->evaluate() << endl;
+	}
+	else
+	{
+		cout << "You entered an invalid input. Please try again." << endl;
+	}
 
 }
 

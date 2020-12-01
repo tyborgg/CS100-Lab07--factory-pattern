@@ -51,6 +51,18 @@ TEST(ParseTest, ReallyLongInput)
         EXPECT_EQ(1,tree->evaluate());
 }
 
+TEST(ParseTest, InvalidInput)
+{
+        ConcreteFactory fac1;
+        string test = "r-7*5";
+        char* args[] = {
+        (char*)&test.at(0),
+        NULL
+        };
+
+        Base* tree = fac1.parse(args,test.length());
+        EXPECT_EQ(NULL,tree);
+}
 
 #endif
 

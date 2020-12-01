@@ -49,7 +49,7 @@ TEST(ParseTestV2, LongInput){
 
 TEST(ParseTestV2, RandomInput){
         ConcreteFactory fac1;
-        string test = "3 * 0 + 2 ** 2";
+        string test = "3*0+2**2";
         char* args[] = {
         (char*)&test.at(0),
         NULL
