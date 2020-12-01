@@ -1,4 +1,4 @@
-nclude "factory.hpp"
+#include "factory.hpp"
 using namespace std;
 
 class ConcreteFactory : Factory
