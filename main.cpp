@@ -7,7 +7,10 @@ using namespace std;
 int main()
 {
 	ConcreteFactory fac1;
-	string test = "10 * 100";
+	string test;
+
+	cout << "Input an expression: ";
+	cin >> test;
 
 	char* args[] = {
 		(char*)&test.at(0),
